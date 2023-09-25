@@ -1,0 +1,99 @@
+*{
+    margin: 0;padding: 0;
+}
+
+body{
+    background-color: rgb(192, 178, 164);
+}
+nav{
+    height: 50px;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.MainContainer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    margin: 25px ;
+
+}
+.GameContainer{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+}
+.GameBlock{
+    border: solid 2px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.GameBlock:hover{
+    background-color: goldenrod;
+    transition: 0.3s ease-in-out;
+    color: grey;
+    
+}
+.Text{
+    font-weight: bold;
+    font-size: 5vw;
+}
+.Text:hover{
+    font-weight: bolder;
+    font-size: 6vw;
+}
+.ResultContainer{
+    margin: 15px;
+}
+.ResultContainer h3{
+    font-weight: bolder;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+.SubResult{
+    margin: 15px 5px;
+    display: flex;
+    align-items: center;
+
+}
+.SubResult h5{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: whitesmoke;
+
+}
+.Reset{
+    margin: 0 15px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color:  rgb(192, 178, 164);
+    color: black;
+    font-weight: bold;
+}
+.excited{
+    width: 0;
+    transition: width 0.3s ease-in-out;
+    margin: 25px 0;
+}
+
+footer{
+    height: 10vh;
+    /* background-color: black; */
+    color: wheat;
+    display: flex;
+    align-items: center;
+    margin: 0 25px;
+}
+.CopyRights{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: black;
+}
